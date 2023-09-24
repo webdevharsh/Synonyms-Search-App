@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin:0; 
+padding:0;
+box-sizing:border-box;
+}   
+
+body{
+background:#ff5556;  
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px;    
+width:500px;
+background:white;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:7px;
+}
+
+.container .app-name{
+height:60px;   
+width:100%;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+display:flex;
+align-items:center;
+font-size:11px;
+position:absolute;
+top:0;
+left:0;
+padding-left:23px;
+text-transform:uppercase;
+color:#2f2f2f;
+}
+
+.container .app-name i{
+color:#ff5556;  
+padding-right:3px;
+}
+
+.container .search-box{
+height:60px;
+width:100%;
+background:white;
+border-radius:5px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+margin-top:60px;
+display:flex;
+align-items:center;
+padding:7px;
+}
+
+.container .search-box input{
+all:unset;
+height:60px;
+width:88%;
+padding-left:10px;
+}
+
+.container .search-box i{
+margin-left:10px;
+color:#ff5556;
+}
+
+.container .result-box{
+height:230px;    
+width:100%;
+border:.3px solid grey;
+border-radius:5px;
+margin-top:25px;
+padding:10px;
+overflow:hidden;
+overflow-y:scroll;
+cursor:auto;
+}
+
+.container .result-box::-webkit-scrollbar{
+display:none; 
+cursor:auto;
+}
+
+.container .result-box li{
+all:unset;  
+padding:10px;
+height:35px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:black;
+border:1px solid #2f2f2f;
+list-style-type:none;
+float:left;
+margin-left:8px;
+margin-top:5px;
+border-radius:5px;
+}
+
+.msg{
+position:absolute;  
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+::selection{
+background:rgb(100, 149, 237,0.8); 
+color:white;
+}
